@@ -1,0 +1,7 @@
+Objetivos:
+1 - Resgistrar quantidade de páginas
+2 - Resgistrar quantidade de processos
+3 - Verificar se as metas foram batidas:
+    3000 páginas ou 160 processos
+4 - Tirar a média de páginas por processos do dia
+5 - Tirar (ou atualizar) a média de páginas por processos no total
