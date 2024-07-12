@@ -12,10 +12,12 @@ while sair != 999:
         total_paginas += sair
         paginas.append(sair)
 processos = len(paginas)
+media_dia = round(total_paginas / processos)
 
 print(f'Lista de páginas: {paginas}')
 print(f'Total de processos: {processos}')
 print(f'Total de páginas: {total_paginas}')
+print(f'Média de páginas por processo: {media_dia}')
 
 if total_paginas >= 3000 or processos >= 160:
     if total_paginas >= 3000:
@@ -24,4 +26,4 @@ if total_paginas >= 3000 or processos >= 160:
         print(f'\33[32mMeta de processos batida com {processos} processos!\33[m')
 else:
     print('\33[31mNenhuma meta foi alcaçada hoje.\33[m')
-    print(f'Faltaram \33[31m{3000 - total_paginas}\33[m páginas e \33[31m{160 - processos}\33[m processos.')
+    print(f'Faltaram \33[31m{3000 - total_paginas}\33[m páginas ou \33[31m{160 - processos}\33[m processos.')
